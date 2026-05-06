@@ -3,8 +3,9 @@
 
 title: Data Science Roadmap
 description: >
-  A self-paced data science + ML course — 19 deep-dive modules from
-  Python basics to transformers, all runnable in Google Colab.
+  A self-paced data science + ML course — 22 deep-dive modules from
+  Python basics to transformers, diffusion models, and time-series,
+  all runnable in Google Colab.
 author: Kader Mohideen
 url: https://kader-xai.github.io/data-science-roadmap
 

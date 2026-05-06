@@ -1,6 +1,6 @@
 # Data Science Roadmap
 
-> A self-paced, code-first course covering the full path from `print("hello")` to a working transformer. **19 deep-dive notebooks** across four parts — Python foundations, visualization, data analysis, and a deeper machine-learning + AI track. Every notebook is one click away in Google Colab.
+> A self-paced, code-first course covering the full path from `print("hello")` to working transformers, diffusion models, and time-series forecasters. **22 deep-dive notebooks** across four parts — Python foundations, visualization, data analysis, and a deeper machine-learning + AI track. Every notebook is one click away in Google Colab.
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kader-xai/data-science-roadmap/blob/main/module_01_python_basics.ipynb) ← start with **Module 1**
 
@@ -30,10 +30,12 @@ The course is one project — built around a shared dataset (auto-mpg cars from 
 - Model it — linear, multiple, polynomial regression with proper train/test split, cross-validation, and regularisation (Ridge / Lasso).
 - **Communicate it** — the part most courses skip. Module 10 + Module 16 train you to write the one-page memo a stakeholder actually reads.
 
-After **Part 4 (M17-19)** you'll additionally be able to:
+After **Part 4 (M17-22)** you'll additionally be able to:
 - Train neural networks (MLP, CNN) in PyTorch from a fresh notebook.
 - Use Hugging Face to run any pretrained model in 3 lines.
-- Read a transformer paper and recognise every term in it — because you implemented attention by hand.
+- Read a transformer paper and recognise every term in it — because you implemented multi-head causal attention by hand.
+- Build and sample from a diffusion model — the technology behind Stable Diffusion / DALL-E.
+- Forecast time-series with ARIMA, Prophet, and LSTM, and validate them honestly with walk-forward splits.
 
 ---
 
@@ -44,7 +46,7 @@ After **Part 4 (M17-19)** you'll additionally be able to:
 | 1 | **Python for Data Science** | 1 → 5 |
 | 2 | **Data Visualization** | 6 → 10 |
 | 3 | **Data Analysis & ML Foundations** | 11 → 16 |
-| 4 | **Machine Learning & AI** *(deeper dive)* | 17 → 19 |
+| 4 | **Machine Learning & AI** *(deeper dive)* | 17 → 22 |
 
 ### Part 1 — Python for Data Science
 
@@ -86,6 +88,7 @@ After **Part 4 (M17-19)** you'll additionally be able to:
 | **All Exercises (with Answer Key)** — every practice problem from M1–M16 in one notebook; solutions in an appendix at the end | self-test after each module | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kader-xai/data-science-roadmap/blob/main/all_modules_exercises.ipynb) |
 | **Output-First Workbook** — the *expected output* is shown, you write the code; reference answer is collapsed behind a `👀 Show answer` toggle | active recall practice | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kader-xai/data-science-roadmap/blob/main/output_first_workbook.ipynb) |
 | **Combined Roadmap** — single-notebook tour of every topic; useful as a refresher/reference | revisiting after the course | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kader-xai/data-science-roadmap/blob/main/data_science_roadmap.ipynb) |
+| **ML Track Exercises (M17-22)** — output-first practice for the ML & AI track; answers behind a `👀 Show answer` toggle | self-test after Modules 17-22 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kader-xai/data-science-roadmap/blob/main/ml_track_exercises.ipynb) |
 
 ---
 
@@ -98,8 +101,11 @@ Picks up after the capstone (M16) and goes into the ML and AI machinery itself. 
 | 17 | **Python for ML & AI — Practice** — 12 sub-modules: Python language essentials, data structures, comprehensions, decorators, OOP, NumPy, Pandas, viz, scikit-learn, **PyTorch**, **Hugging Face**, the ML engineer's toolkit | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kader-xai/data-science-roadmap/blob/main/module_17_python_for_ml_ai.ipynb) |
 | 18 | **Six Core Models End-to-End** — one notebook, six full pipelines: **Linear Regression** (California housing) → **Logistic Regression** (cancer) → **K-Means** (customer segments) → **MLP** & **CNN** (Fashion-MNIST) → **Transformer LM** (from scratch). ~10 min on free Colab CPU. | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kader-xai/data-science-roadmap/blob/main/module_18_six_core_models.ipynb) |
 | 19 | **Self-Attention From Scratch** — the transformer's core mechanism built step-by-step in PyTorch with `d_model = 2` so every Q/K/V matrix is hand-checkable. Then connects to multi-head causal attention. | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kader-xai/data-science-roadmap/blob/main/module_19_self_attention.ipynb) |
+| 20 | **Multi-Head + Causal Attention** — multi-head split, causal masking, the full transformer block (LayerNorm + MHA + FFN + residual), stacked into a `TinyTransformer` you can train. | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kader-xai/data-science-roadmap/blob/main/module_20_multihead_causal_attention.ipynb) |
+| 21 | **Diffusion Models From Scratch** — destroy → undo. The math behind Stable Diffusion built on a 2D toy dataset (two moons) so you can watch every step. | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kader-xai/data-science-roadmap/blob/main/module_21_diffusion_models.ipynb) |
+| 22 | **Time-Series Forecasting** — when rows have an order. ARIMA, Prophet, LSTM, walk-forward validation. | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kader-xai/data-science-roadmap/blob/main/module_22_time_series_forecasting.ipynb) |
 
-> 🎯 **Why this part exists.** Most data-science courses end at "you can fit a regression and a random forest." This part picks up where that stops and walks through *why* deep learning works — by building the same six model families that power production ML in 2026, then opening up the transformer's attention mechanism so it stops being a black box. After Module 19 you've gone from `import pandas` (M1) to a working transformer language model with hand-checkable matrices — unusual coverage for a single repo.
+> 🎯 **Why this part exists.** Most data-science courses end at "you can fit a regression and a random forest." This part picks up where that stops and walks through *why* modern AI works — building the same six model families that power production ML in 2026 (M18), opening up the transformer's attention mechanism (M19, M20), then doing the same for diffusion (M21) and time-series (M22). After Module 22 you've gone from `import pandas` (M1) to a working transformer language model, a diffusion sampler, and an LSTM forecaster — all in pure PyTorch, all in one repo.
 
 ---
 
@@ -164,17 +170,17 @@ Curriculum scaffold from the IBM Coursera tracks; notebooks rebuilt from scratch
 ## Roadmap
 
 - [x] **Modules 1-16** — Data Science (Python, Viz, Analysis & ML foundations)
-- [x] **Modules 17-19** — Machine Learning & AI deep dive
+- [x] **Modules 17-22** — Machine Learning & AI (Python for ML, six core models, attention, multi-head + causal, diffusion, time-series)
 - [x] Exercises workbook + answer key (M1-M16)
 - [x] Output-first practice workbook (M1-M16)
+- [x] **ML track exercises workbook (M17-M22)**
 - [x] Colab badges on every notebook + README
 - [x] GitHub Pages static site
 - [x] MIT license
-- [ ] **Module 20** — Multi-head + causal attention
-- [ ] **Module 21** — Diffusion models from scratch
-- [ ] **Module 22** — Time-series forecasting (ARIMA, Prophet, LSTM)
 - [ ] Per-module video walkthroughs
-- [ ] Exercises workbook for Modules 17-19
+- [ ] **Module 23** — Reinforcement learning (Q-learning, REINFORCE, PPO)
+- [ ] **Module 24** — Graph neural networks (GCN, GAT)
+- [ ] **Module 25** — Production ML (FastAPI serving, Docker, monitoring)
 - [ ] Translate README + practice problems to Tamil
 
 If you'd like to contribute one of the open items, open an issue first to scope it.
