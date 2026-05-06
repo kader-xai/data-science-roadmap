@@ -1,0 +1,27 @@
+# GitHub Pages config — turns README.md into a polished project site
+# at https://kader-xai.github.io/data-science-roadmap/
+
+title: Data Science Roadmap
+description: >
+  A self-paced data science + ML course — 19 deep-dive modules from
+  Python basics to transformers, all runnable in Google Colab.
+author: Kader Mohideen
+url: https://kader-xai.github.io/data-science-roadmap
+
+theme: jekyll-theme-cayman
+show_downloads: true
+
+# Polite to ignore non-content files
+exclude:
+  - "*.ipynb"           # notebooks render badly as HTML; link to Colab instead
+  - .gitignore
+  - LICENSE
+
+# Friendly URLs
+permalink: pretty
+
+# SEO defaults
+twitter:
+  username: kader-xai
+github:
+  is_project_page: true
